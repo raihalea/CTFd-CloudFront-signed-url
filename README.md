@@ -10,11 +10,14 @@ This plugin enables CTFd to generate signed URLs for objects stored in S3, redir
 Clone this repository into the `CTFd/plugins/` directory.
 
 ### Required Environment Variables
+- `UPLOAD_PROVIDER`
+  - election of Uploder. Fixed values for using this plugin.
+  - s3withcf
 - `AWS_S3_BUCKET`
   - Name of the S3 bucket.
   - Example: `bucket-name`
 - `AWS_S3_CUSTOM_PREFIX`
-  -Used to resolve the path disparity between CloudFront and S3. This should be a unique path not overlapping with other configurations.
+  - Used to resolve the path disparity between CloudFront and S3. This should be a unique path not overlapping with other configurations.
   - Example: `files/s3/`
 - `AWS_CF_PUBLIC_KEY_ID`
   - The Key ID associated with the CloudFront distribution's public key.
