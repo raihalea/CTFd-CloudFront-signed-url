@@ -11,8 +11,8 @@ Clone this repository into the `CTFd/plugins/` directory.
 
 ### Required Environment Variables
 - `UPLOAD_PROVIDER`
-  - Selection of Uploder. Fixed values for using this plugin.
-  - `s3withcf`
+  - Selection of Uploder. 
+  - Fixed values for using this plugin: `s3withcf`
 - `AWS_S3_BUCKET`
   - Name of the S3 bucket.
   - Example: `bucket-name`
